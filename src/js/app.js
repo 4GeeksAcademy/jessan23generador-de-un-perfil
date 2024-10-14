@@ -37,7 +37,24 @@ function render(variables = {}) {
           <h2>${variables.role}</h2>
           <h3>${variables.city} ${variables.country}</h3>
 
-          <ul class=$ "{socialMediPosition}">
+          <ul class= ${variables.socialMediaPosition}
+          
+
+function right() {
+  document.getElementById("socialMediaposition").style.cssFloat = "right";
+}
+
+
+function floatLefth() {
+  document.getElementById("socialMediaPosition").style.cssFloat = "lefth";
+}
+
+
+>
+          
+
+
+
 
             <li><a href="https://twitter.com/jessicaanai.rg"><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://github.com/jessicaanai.rg"><i class="fab fa-github"></i></a></li>
@@ -56,11 +73,13 @@ window.onload = function() {
     // if includeCover is true the algorithm should show the cover image
     includeCover: true,
     // this is the image's url that will be used as a background for the profile cover
-    background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da",
+    background:
+      "https://cdn.pixabay.com/photo/2017/02/09/09/11/starry-sky-2051448_640.jpg",
     // this is the url for the profile avatar
-    avatarURL: "https://randomuser.me/api/portraits/women/42.jpg",
+    avatarURL:
+      "https://png.pngtree.com/png-vector/20220817/ourmid/pngtree-women-cartoon-avatar-in-flat-style-png-image_6110776.png",
     // social media bar position (left or right)
-    socialMediaPosition: "position-right or left",
+    socialMediaPosition: "position-right",
     // social media usernames
     twitter: null,
     github: null,
