@@ -37,9 +37,8 @@ function render(variables = {}) {
           <h2>${variables.role}</h2>
           <h3>${variables.city} ${variables.country}</h3>
 
-          <ul class="position-right">
-          
-          
+          <ul class=$ "{socialMediPosition}">
+
             <li><a href="https://twitter.com/jessicaanai.rg"><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://github.com/jessicaanai.rg"><i class="fab fa-github"></i></a></li>
             <li><a href="https://linkedin.com/school/jessicaanai.rg"><i class="fab fa-linkedin"></i></a></li>
@@ -61,7 +60,7 @@ window.onload = function() {
     // this is the url for the profile avatar
     avatarURL: "https://randomuser.me/api/portraits/women/42.jpg",
     // social media bar position (left or right)
-    socialMediaPosition: "position-left",
+    socialMediaPosition: "position-right or left",
     // social media usernames
     twitter: null,
     github: null,
@@ -88,6 +87,7 @@ window.onload = function() {
           : this.value == "false"
           ? false
           : this.value;
+
       render(Object.assign(window.variables, values)); // render again the card with new values
     });
   });
